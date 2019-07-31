@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TriggerTexture : MonoBehaviour {
 
+    // see TriggerNote_Or_Clip_AndEffect.cs for relevant comments. this script is much simpler; it just loops and stops looping a clip.
     bool controllerInSphere = false;
     enum PlayState { Normal = 0, Playing = 1 }
     PlayState playState = PlayState.Normal;

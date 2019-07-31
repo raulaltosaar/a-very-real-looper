@@ -10,6 +10,7 @@ public class UpdatePlayState : MonoBehaviour {
 
     // create delegate to track when controllers' "Menu" button is pressed
     public delegate void OnMenuPress();
+
     // populate that delegate with a method 
     public static OnMenuPress onMenuPress;
 
@@ -21,7 +22,8 @@ public class UpdatePlayState : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        // if the controllers' "Menu" button is pressed, run the onMenuPress method which is referenced in the TriggerNote_Or_Clip_AndEffect.cs script
+
+        // if the controllers' "Menu" button is pressed, run the onMenuPress method which is accessed by the TriggerNote_Or_Clip_AndEffect.cs script
         if (device.GetPressDown(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
         {
             if (onMenuPress != null)

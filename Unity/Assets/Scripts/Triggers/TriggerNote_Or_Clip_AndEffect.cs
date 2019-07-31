@@ -11,7 +11,8 @@ public class TriggerNote_Or_Clip_AndEffect : MonoBehaviour {
     // an enumerator called PlayState will help us
     enum PlayState { Normal = 0, Playing = 1 }
 
-    // our default state is Normal: when you collide with a trigger, a sound plays, but. when you leave the trigger, the sound stops
+    // our default state is Normal: when you collide with a trigger, a sound plays, but, when you leave the trigger, the sound stops
+    // the Playing state: when you leave the trigger and it is in the Playing state, the sound keeps playing
     PlayState playState = PlayState.Normal;
 
     // the OSC addresses we are sending information to. OSCAddress is used for sending on/off messages. EffectOSCAddress is used to send continuous controller position data
@@ -19,12 +20,12 @@ public class TriggerNote_Or_Clip_AndEffect : MonoBehaviour {
     public string EffectOSCAddress;
 
     // we would like to trigger a sound with one hand and then control an effect with the other, while we are triggering that sound
-    // thus we need to know which controller (left or right) is triggering so that the other controller can control the effect
+    // thus we need to know which controller (left or right) is triggering a sound so that the other controller can control the effect
     // so we create two public variables 
     public GameObject leftController;
     public GameObject rightController;
 
-    // and two private variables of type ControllerPosition (from the ControllerPosition.cs script)
+    // and two private variables of class ControllerPosition (from the ControllerPosition.cs script)
     private ControllerPosition leftPosition;
     private ControllerPosition rightPosition;
 
@@ -33,7 +34,7 @@ public class TriggerNote_Or_Clip_AndEffect : MonoBehaviour {
         // initialize the OSC Handler
         OSCHandler.Instance.Init();
 
-        // we are informed by the UpdatePlayState.cs script when the "Menu" button is pressed, then and we run a function called ChangePlayState
+        // we are informed by the UpdatePlayState.cs script when the "Menu" button is pressed, and then we run a function called ChangePlayState
         UpdatePlayState.onMenuPress += ChangePlayState;
 
         // we get the vertical controller position from the ControllerPosition.cs script attached to each controller
@@ -62,14 +63,14 @@ public class TriggerNote_Or_Clip_AndEffect : MonoBehaviour {
     // when we collide with a trigger
     private void OnTriggerStay(Collider other)
     {
-        // make some noise if the "Grip" button is not pressed!
+        // make some NOISE if the "Grip" button is not pressed!
         if (MoveTrigger.gripPressed == false)
         {
             // by sending a "1" to TouchDesigner
             controllerInTrigger = true;
             OSCHandler.Instance.SendMessageToClient("Touch", OSCAddress, 1f);
 
-            // if the left controller is triggering the sound, use the right controller's position to control an effect
+            // and then, if the left controller is triggering the sound, use the right controller's position to control an effect
             if (other.tag == "Left")
             {
                 OSCHandler.Instance.SendMessageToClient("Touch_Position", EffectOSCAddress, rightPosition.yPosition);

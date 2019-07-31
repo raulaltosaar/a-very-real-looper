@@ -27,10 +27,9 @@ public class MoveTrigger : MonoBehaviour {
     }
 
     void Update () {
-
         // our intent when holding the grip button is to move a trigger into a new location (by intiating the PickUpOrDrop function) 
-        // therefore the trigger does not activate (sound does not play) when we collide with it while holding the grip button
-
+        // when moving we do not want sound to play
+        // therefore the trigger does not activate when we collide with it while holding the grip button
         if (device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
             gripPressed = true; 
@@ -58,7 +57,7 @@ public class MoveTrigger : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        // if we exit the trigger then we are no longer inside of a trigger and must reset the "Trigger" variable
+        // if we exit the trigger then we are no longer inside of a trigger and must empty the "Trigger" variable
         Trigger = null;
     }
 
