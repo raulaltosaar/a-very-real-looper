@@ -1,0 +1,3 @@
+- [MoveTrigger.cs] Test using Vive whether it is necessary to repeat setting 
+  trigger's position equal to controller's in DropObj function. Does it work just
+  just as well without these two lines?

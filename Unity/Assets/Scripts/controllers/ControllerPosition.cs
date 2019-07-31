@@ -19,6 +19,4 @@ public class ControllerPosition : MonoBehaviour {
     {
         yPosition = transform.position.y;
     }
-
-
 }
