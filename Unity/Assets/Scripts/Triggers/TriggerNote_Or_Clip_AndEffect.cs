@@ -41,7 +41,7 @@ public class TriggerNote_Or_Clip_AndEffect : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (MoveSound.gripPressed == false)
+        if (MoveTrigger.gripPressed == false)
         {
             controllerInSphere = true;
             OSCHandler.Instance.SendMessageToClient("Touch", AbletonOSCAddress, 1f);

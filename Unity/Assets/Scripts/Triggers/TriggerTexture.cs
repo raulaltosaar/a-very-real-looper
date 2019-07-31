@@ -32,7 +32,7 @@ public class TriggerTexture : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (MoveSound.gripPressed == false)
+        if (MoveTrigger.gripPressed == false)
         {
             controllerInSphere = true;
             OSCHandler.Instance.SendMessageToClient("Touch", AbletonClipOSCAddress, 1f);
