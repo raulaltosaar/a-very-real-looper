@@ -17,7 +17,7 @@ AbletonLive/AVRL_Project/Backup
 
 # Ignore Unity Temp File
 
-Unity/Temp/UnityLockFile
+Unity/Temp
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
