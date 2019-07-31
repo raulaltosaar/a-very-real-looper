@@ -13,16 +13,16 @@ public class TriggerNote_Or_Clip_AndEffect : MonoBehaviour {
 
     public GameObject leftController;
     public GameObject rightController;
-    private SendControllerPosition leftPosition;
-    private SendControllerPosition rightPosition;
+    private ControllerPosition leftPosition;
+    private ControllerPosition rightPosition;
 
     private void Start()
     {
         OSCHandler.Instance.Init();
         UpdatePlayState.onMenuPress += ChangePlayState;
 
-        leftPosition = leftController.GetComponent<SendControllerPosition>();
-        rightPosition = rightController.GetComponent<SendControllerPosition>();
+        leftPosition = leftController.GetComponent<ControllerPosition>();
+        rightPosition = rightController.GetComponent<ControllerPosition>();
     }
 
     public void ChangePlayState()
