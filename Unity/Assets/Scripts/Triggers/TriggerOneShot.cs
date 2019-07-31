@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerOneShot : MonoBehaviour {
 
-    public string AbletonOSCAddress;
+    public string OSCAddress;
 
     private void Start()
     {
@@ -13,12 +13,12 @@ public class TriggerOneShot : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-            OSCHandler.Instance.SendMessageToClient("Touch", AbletonOSCAddress, 1f);
+            OSCHandler.Instance.SendMessageToClient("Touch", OSCAddress, 1f);
     }
 
     private void OnTriggerExit(Collider other)
     {
-            OSCHandler.Instance.SendMessageToClient("Touch", AbletonOSCAddress, 0f);
+            OSCHandler.Instance.SendMessageToClient("Touch", OSCAddress, 0f);
     }
 
 }
