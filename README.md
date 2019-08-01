@@ -4,7 +4,12 @@ A custom musical interface developed for the HTC Vive. The Very Real Looper lets
 [![](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper.png)](https://vimeo.com/347904695)
 
 ## Table of Contents
-* [General Info](#general-info)
+* [General Information](#general-information)
+* [Getting Started](#getting-started)
+	* [Unity](#unity)
+	* [TouchDesigner](#touchdesigner)
+	* [Ableton Live](#abletonlive)
+* [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
