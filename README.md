@@ -1,11 +1,12 @@
 # A Very Real Looper
-A custom musical interface developed for the HTC Vive. The Very Real Looper lets you place virtual sounds onto physical objects and perform music—without a headset! Click the image below for an example of the Looper in action.
+A custom musical interface developed for the HTC Vive. The Very Real Looper lets you place virtual sounds onto physical objects and perform music—without a headset. Click the image below for an example of the Looper in action.
 
 [![](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper.png)](https://vimeo.com/347904695)
 
 ## Table of Contents
 * [General Information](#general-information)
 * [Getting Started](#getting-started)
+	* [Prerequisites](#prerequisites)
 	* [Unity](#unity)
 	* [TouchDesigner](#touchdesigner)
 	* [Ableton Live](#abletonlive)
@@ -17,10 +18,9 @@ The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live
 
 Unity handles input from the HTC Vive via SteamVR. It also houses triggers in the form of 3D models. Unity's physics engine is used to detect collisions between the Vive controllers and these triggers. 
 
-Using [Open Sound Control](http://opensoundcontrol.org/introduction-osc) (OSC), this collision information is sent to TouchDesigner alongside live controller position data. TouchDesigner helps tune the incoming data from Unity and communicates seamlessly with Ableton Live via the [TDAbleton package](https://docs.derivative.ca/TDAbleton).
+Using [Open Sound Control](http://opensoundcontrol.org/introduction-osc) (OSC), this collision information is sent to TouchDesigner alongside live controller position data. TouchDesigner helps tune the incoming data from Unity and communicates seamlessly with Ableton Live via the [TDAbleton package](https://docs.derivative.ca/TDAbleton). If you haven't heard of [TouchDesigner](https://www.derivative.ca/) before, it's an awesome visual coding platform particularly designed for real-time projects. 
 
-If you haven't heard of [TouchDesigner](https://www.derivative.ca/) before, it's an awesome visual coding platform particularly designed for real-time projects. 
-
+Our sound resides in Ableton Live in the form of samples, MIDI clips, and effects—all of which are controlled by OSC messages received from TouchDesigner. 
 
 ## Getting Started
 
