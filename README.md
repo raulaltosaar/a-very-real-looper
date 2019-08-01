@@ -17,7 +17,10 @@ The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live
 
 Unity handles input from the HTC Vive via SteamVR. It also houses triggers in the form of 3D models. Unity's physics engine is used to detect collisions between the Vive controllers and these triggers. 
 
-Using Open Sound Control (OSC), this collision information is sent to TouchDesigner alongside live controller position data. If you haven't heard of [TouchDesigner](https://www.derivative.ca/) before, it's an awesome visual coding platform for real-time projects. TouchDesigner helps tune the incoming data from Unity and communicates seamlessly with Ableton Live via the [TDAbleton package](https://docs.derivative.ca/TDAbleton).
+Using [Open Sound Control](http://opensoundcontrol.org/introduction-osc) (OSC), this collision information is sent to TouchDesigner alongside live controller position data. TouchDesigner helps tune the incoming data from Unity and communicates seamlessly with Ableton Live via the [TDAbleton package](https://docs.derivative.ca/TDAbleton).
+
+If you haven't heard of [TouchDesigner](https://www.derivative.ca/) before, it's an awesome visual coding platform particularly designed for real-time projects. 
+
 
 ## Getting Started
 
