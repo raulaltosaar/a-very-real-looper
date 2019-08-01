@@ -1,10 +1,8 @@
 # A Very Real Looper
-A custom musical interface developed for the HTC Vive. The Very Real Looper lets you place virtual sounds onto physical objects and perform music—without a headset. Click the image below for an example of the Looper in action.
-
-[![](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper.png)](https://vimeo.com/347904695)
-
+A custom musical interface developed for the HTC Vive. The Very Real Looper lets you place virtual sounds onto physical objects and perform music—without a headset. Click [here](https://vimeo.com/347904695) for a video of the Looper in action
+.r
 ## Table of Contents
-* [General Information](#general-information)
+* [Introduction](#introduction)
 * [Getting Started](#getting-started)
 	* [Prerequisites](#prerequisites)
 	* [Unity](#unity)
@@ -12,7 +10,7 @@ A custom musical interface developed for the HTC Vive. The Very Real Looper lets
 	* [Ableton Live](#abletonlive)
 * [Acknowledgements](#acknowledgements)
 
-## General Information
+## Introduction
 
 The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live. 
 
@@ -24,7 +22,7 @@ Our sound resides in Ableton Live in the form of samples, MIDI clips, and effect
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 
