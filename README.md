@@ -13,7 +13,11 @@ A custom musical interface developed for the HTC Vive. The Very Real Looper lets
 
 ## General Information
 
-The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live. Unity handles input from the HTC Vive via SteamVR. It also houses triggers in the form of 3D models. Unity's physics engine is used to detect collisions between the Vive controllers and these triggers. Using Open Sound Control (OSC), this collision information is sent to TouchDesigner alongside controller position data. If you haven't heard of [TouchDesigner](https://www.derivative.ca/) before, it's an awesome visual coding platform used for designing real-time visuals and interactive projects. TouchDesigner helps tune the incoming data from Unity and communicates seamlessly with Ableton Live via the [TDAbleton package](https://docs.derivative.ca/TDAbleton).
+The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live. 
+
+Unity handles input from the HTC Vive via SteamVR. It also houses triggers in the form of 3D models. Unity's physics engine is used to detect collisions between the Vive controllers and these triggers. 
+
+Using Open Sound Control (OSC), this collision information is sent to TouchDesigner alongside live controller position data. If you haven't heard of [TouchDesigner](https://www.derivative.ca/) before, it's an awesome visual coding platform for real-time projects. TouchDesigner helps tune the incoming data from Unity and communicates seamlessly with Ableton Live via the [TDAbleton package](https://docs.derivative.ca/TDAbleton).
 
 ## Getting Started
 
