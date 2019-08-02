@@ -12,7 +12,7 @@ A custom musical interface developed for the HTC Vive. The Very Real Looper lets
 
 ## Introduction
 
-[()]
+![](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper-diagram.jpg)
 
 The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live. 
 
