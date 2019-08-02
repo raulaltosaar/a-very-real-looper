@@ -99,10 +99,10 @@ public class MoveTrigger : MonoBehaviour {
         // if the controller is attached to a trigger
         if (fJoint.connectedBody != null)
         {
-            // unsure whether necessary to repeat setting connectedBody's position = to controller's position. need to test -> added to TODO.
 
-            //fJoint.connectedBody = Trigger.GetComponent<Rigidbody>();
-            //fJoint.connectedBody.transform.position = transform.position;
+            // set the trigger's position equal to the controller's most recent, final position
+            fJoint.connectedBody = Trigger.GetComponent<Rigidbody>();
+            fJoint.connectedBody.transform.position = transform.position;
 
             // detach the controller from the trigger by setting connectedBody to null
             fJoint.connectedBody = null;
