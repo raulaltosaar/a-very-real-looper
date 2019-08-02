@@ -28,7 +28,7 @@ Our sound resides in Ableton Live in the form of samples, MIDI clips, and effect
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+- this isn't necessary, but since I perform live with the Very Real Looper, I use ASIO4ALL for lower latency.
 
 ```
 Give examples

@@ -19,7 +19,14 @@ public class ControllerPosition : MonoBehaviour {
 
     public void Update()
     {
-        // populate variable with controllers' current vertical position
-        yPosition = transform.position.y;
+        // we populate the variable with controllers' current vertical position (y axis) every frame.
+
+        // however,
+        // SteamVR calculates the controllers' vertical position using the distance from the floor which is created when you calibrate your play-area with SteamVR
+        // we want to meaningfully control effects using the controllers' vertical position. 
+        // so we subtract 1.5 from the current vertical position, essentially setting the floor higher than it actually is. 
+        // this way we get more usable 0-1 values that correspond better to real life movement.
+
+        yPosition = transform.position.y-1.25f;
     }
 }
