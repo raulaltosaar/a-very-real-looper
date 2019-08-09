@@ -11,6 +11,10 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+# Ignore TouchDesigner Backup Folder
+
+TouchDesigner/Backup
+
 # Ignore Ableton Backup Folder
 
 AbletonLive/AVRL_Project/Backup
