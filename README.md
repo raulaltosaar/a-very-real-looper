@@ -38,7 +38,7 @@ Getting the Looper up and running involves installing some software and paying c
 
 ## Unity
 
-## Scene Hierarchy
+### Scene Hierarchy
 
 Navigate to the Unity/Assets/Scenes folder in this repo and open the AVRL.unity file. This is where the magic begins. Check out the scene hierarchy to get a sense of what is going on. Inside the **[CameraRig]** GameObject, Controller (left)/(right) contain all of the VR controller interaction scripts (also accessible via Unity/Assets/Scripts). Next in the scene hierarchy we have the **Triggers** GameObject that contains all of our 3D models which act like audio triggers. These triggers have corresponding interaction scripts and OSC addresses attached to them. These triggers are broken up into:
 
@@ -47,7 +47,7 @@ Navigate to the Unity/Assets/Scenes folder in this repo and open the AVRL.unity 
 - **Textures** that trigger ambient samples in Ableton. These can be looped. 
 - **ClipsAndEffects** that trigger MIDI clips in Ableton and also enable VR controller position data to control audio effects affecting these MIDI clips. These can be looped.
 
-## Interaction
+### Interaction
 
 The Looper is essentially played in Unity with the HTC Vive controllers. Interaction is relatively straightforward:
 
@@ -58,6 +58,8 @@ The Looper is essentially played in Unity with the HTC Vive controllers. Interac
 - To control audio effects affecting Notes and Clips, simply hold your controller inside one of those triggers and move your other controller up and down in space.
 
 ## TouchDesigner
+
+
 
 ## Ableton Live
 
