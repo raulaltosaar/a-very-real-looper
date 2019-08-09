@@ -17,7 +17,7 @@ Click [here](https://vimeo.com/347904695) for a video of the Looper in action.
 
 ## Introduction
 
-![](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper-diagram.jpg)
+![:)](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper-diagram.jpg)
 
 The Looper uses three pieces of software: Unity, TouchDesigner, and Ableton Live. 
 
@@ -42,7 +42,7 @@ Getting the Looper up and running involves installing some software. To play the
 
 ## Unity
 
-![](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper-triggers-unity.jpg)
+![:)](https://github.com/raulaltosaar/a-very-real-looper/blob/master/looper-triggers-unity.jpg)
 
 ### Scene Hierarchy
 
