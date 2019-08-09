@@ -39,9 +39,16 @@ Getting the Looper up and running involves installing some software and paying c
 Navigate to the Unity/Assets/Scenes folder in this repo and open the AVRL.unity file. This is where the magic begins. Check out the scene hierarchy to get a basic sense of what is going on. Inside the **[CameraRig]** GameObject, Controller (left)/(right) contain all of the VR controller interaction scripts (also accessible via ./Assets/Scripts). Inside the **Trigger** GameObject we have all of our 3D models that act like triggers and have corresponding scripts attached to them. These triggers are broken up into:
 
 - **OneShots** that trigger samples in Ableton. These can't be looped.
-- **NotesAndEffects** that trigger specific MIDI notes in Ableton and enable VR controller position data to control audio effects affecting those MIDI notes.
+- **NotesAndEffects** that trigger specific MIDI notes in Ableton and enable VR controller position data to control audio effects affecting those MIDI notes. These can be looped.
 - **Textures** that trigger ambient samples in Ableton. These can be looped. 
 - **ClipsAndeffects** that trigger MIDI clips in Ableton. These can be looped.
+
+The Looper is essentially played in Unity with the HTC Vive controllers. Interaction is relatively straightforward:
+
+- Hit a trigger with your controller to play a sound. Haptic feedback will fire while you are inside the trigger (haptic feedback is what makes the Looper playable without a headset).
+- While inside of a trigger, press the **[Menu](https://www.vive.com/us/support/vive/category_howto/about-the-controllers.html)** button on your controller to loop the sound that is currently playing (if it can be looped).
+- To end the loop, put your controller back inside the currently looping trigger and press the Menu button again. 
+- To move a trigger into a new position in real-world space, hold the **[Grip](https://www.vive.com/us/support/vive/category_howto/about-the-controllers.html)** button, move the controller into a trigger, and then hold the **[Trigger](https://www.vive.com/us/support/vive/category_howto/about-the-controllers.html)** button. You have now grabbed the 3D audio trigger and can move it wherever you want. To drop the trigger into its new location, release your grip on the Trigger button, pull the controller out of the trigger, and finally release the Grip button.
 
 ## TODO
 
