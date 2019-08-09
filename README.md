@@ -29,19 +29,19 @@ Getting the Looper up and running involves installing some software and paying c
 ### Prerequisites
 
 - The SteamVR runtime must be installed and running when using the Looper. This can be downloaded from Steam or by clicking [here](https://store.steampowered.com/app/250820/SteamVR/).
-- Unity *version 2018.2.7* must be installed. This can be downloaded from the [Unity version archive](https://unity3d.com/get-unity/download/archive) (click Unity 2018.x and scroll down until you see the right version). Other versions of Unity will not work properly because the Looper utilizes a now-deprecated version of the [SteamVR Unity plugin](https://github.com/ValveSoftware/steamvr_unity_plugin).
+- Unity **version 2018.2.7** must be installed. This can be downloaded from the [Unity version archive](https://unity3d.com/get-unity/download/archive) (click Unity 2018.x and scroll down until you see the right version). Other versions of Unity will not work properly because the Looper utilizes a now-deprecated version of the [SteamVR Unity plugin](https://github.com/ValveSoftware/steamvr_unity_plugin).
 - TouchDesigner must be installed and can be downloaded from [here](https://www.derivative.ca/099/Downloads/).
 - Ableton Live must be installed. If you don't own Ableton you can get a free 30-day trial [here](https://www.ableton.com/en/trial/). You can probably use an expired version of the trial to test the Looper out—you just can't save or export anything.
 - The [ASIO4ALL universal audio driver](http://www.asio4all.org/) isn't necessary but is recommended for achieving lower gestural input -> audio output latencies.
 
 ## Unity
 
-Navigate to the Unity/Assets/Scenes folder in this repo and open the AVRL.unity file. This is where the magic begins. Check out the scene hierarchy to get a basic sense of what is going on. Inside the *[CameraRig]* GameObject, Controller (left)/(right) contain all of the VR controller interaction scripts (also accessible via ./Assets/Scripts). Inside the *Trigger* GameObject we have all of our 3D models that act like triggers and have corresponding scripts attached to them. These triggers are broken up into:
+Navigate to the Unity/Assets/Scenes folder in this repo and open the AVRL.unity file. This is where the magic begins. Check out the scene hierarchy to get a basic sense of what is going on. Inside the **[CameraRig]** GameObject, Controller (left)/(right) contain all of the VR controller interaction scripts (also accessible via ./Assets/Scripts). Inside the **Trigger** GameObject we have all of our 3D models that act like triggers and have corresponding scripts attached to them. These triggers are broken up into:
 
-- *OneShots* that trigger samples in Ableton. These can't be looped.
-- *NotesAndEffects* that trigger specific MIDI notes in Ableton and enable VR controller position data to control audio effects affecting those MIDI notes.
-- *Textures* that trigger ambient samples in Ableton. These can be looped. 
-- *ClipsAndeffects* that trigger MIDI clips in Ableton. These can be looped.
+- **OneShots** that trigger samples in Ableton. These can't be looped.
+- **NotesAndEffects** that trigger specific MIDI notes in Ableton and enable VR controller position data to control audio effects affecting those MIDI notes.
+- **Textures** that trigger ambient samples in Ableton. These can be looped. 
+- **ClipsAndeffects** that trigger MIDI clips in Ableton. These can be looped.
 
 ## TODO
 
