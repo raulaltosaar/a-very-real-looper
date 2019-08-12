@@ -82,7 +82,4 @@ Open the AVRL.als file located inside the Ableton_Live/AVRL_Project folder in th
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## TODO
-
-- Master the AVRL Ableton set properly, by getting mastered version of "Gradex" ableton set off of hard drive and replicating the settings.
 
